@@ -1,5 +1,57 @@
 
-function startQuiz() {
+
+const allQuestions = [
+  {
+    question: "Is the sky blue?",
+    correctAnswer: true,
+    submittedAnswer:null
+
+  },
+  {
+    question: "Is the sky yellow?",
+    correctAnswer: false,
+    submittedAnswer:null
+
+  },
+  {
+    question: "Is the sky pink?",
+    correctAnswer: false,
+    submittedAnswer:null
+
+  }
+];
+
+let activeQuestions = [];
+let questionNumber = 0;
+
+
+function startQuiz(){
+    displayQuiz();
+    
+    activeQuestions = allQuestions;
+    console.log("activeQuestions: ",activeQuestions)
+    
+    updateQuestionText();    
+ 
+}
+
+function questionAnswered(answer){
+    activeQuestions[questionNumber].submittedAnswer = answer;
+    console.log("activeQuestions>questionAnswered: ",activeQuestions)
+}
+
+function submitAnswer(){
+    questionNumber++;
+    updateQuestionText();
+    
+}
+
+function updateQuestionText(){
+    document.getElementById("question").textContent = activeQuestions[questionNumber].question;
+} 
+
+      
+function displayQuiz() {
     let quizContainer = document.getElementById("quiz-container");
     quizContainer.innerHTML ="";
     
@@ -32,7 +84,7 @@ function startQuiz() {
     trueBtn.classList.add("btn-lg");
     trueBtn.setAttribute('id','true-btn');
     trueBtn.textContent = 'True';
-    trueBtn.setAttribute('onclick','answerTrue()');
+    trueBtn.setAttribute('onclick','questionAnswered(true)');
     column1.appendChild(trueBtn); 
     
     let column2 = document.createElement('div');
@@ -44,7 +96,7 @@ function startQuiz() {
     falseBtn.classList.add("btn-lg");
     falseBtn.setAttribute('id','false-btn');
     falseBtn.textContent = 'False';
-    falseBtn.setAttribute('onclick','answerFalse()');
+    falseBtn.setAttribute('onclick','questionAnswered(false)');
     column2.appendChild(falseBtn); 
     
     let submitBtn = document.createElement('button');
@@ -55,4 +107,3 @@ function startQuiz() {
     submitBtn.setAttribute('onclick','submitAnswer()');
     questionContainer.appendChild(submitBtn); 
 }
-      
