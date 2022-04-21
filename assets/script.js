@@ -21,6 +21,7 @@ const allQuestions = [
 
 let activeQuestions = [];
 let questionNumber = 0;
+let correctAnswerCount = 0;
 
 
 function startQuiz(){
@@ -51,13 +52,34 @@ function submitAnswer(){
 }
 
 function showResults(){
+    document.getElementById("question").textContent = "Results";
+    let answer = document.getElementById("answer");
+    answer.innerHTML = "";
+    document.getElementById("submit-btn").textContent = "Try Again";
+    document.getElementById("submit-btn").setAttribute('onclick','location.reload()');
     
+    activeQuestions.forEach(getAnswerCount);
+    console.log(correctAnswerCount + "/" + activeQuestions.length);
+    
+    let score = document.createElement('p');
+    score.classList.add("h3");
+    score.setAttribute('id','score');
+    score.textContent = correctAnswerCount + "/" + activeQuestions.length;
+    answer.appendChild(score);
 }
 
 
+
 //private functions
+function getAnswerCount(question, index) {
+    if (question.correctAnswer === question.submittedAnswer) {
+        correctAnswerCount++;
+    }
+}
+ 
+
 function updateQuestionText(){
-    document.getElementById("question").textContent = activeQuestions[questionNumber].question;
+    document.getElementById("question").textContent = activeQuestions[questionNumber].question;    
 } 
 
       
@@ -70,7 +92,7 @@ function displayQuiz() {
     questionContainer.setAttribute('id','question-container');
     quizContainer.appendChild(questionContainer);
     
-    let question = document.createElement('div');
+    let question = document.createElement('p');
     question.classList.add("h2");
     question.setAttribute('id','question');
     question.textContent = 'Question Loading...';
