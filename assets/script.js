@@ -92,14 +92,17 @@ function questionAnswered(answer){
 }
 
 function submitAnswer(){
-    questionNumber++;
-    
-    if (questionNumber == activeQuestions.length) {
-        showResults();
-    }  
-    else {
-        updateQuestionText();
+    if (null != activeQuestions[questionNumber].submittedAnswer){//TODO increment progressbar by 10
+        questionNumber++;
 
+
+        if (questionNumber == activeQuestions.length) {
+            showResults();
+        }  
+        else {
+            updateQuestionText();
+
+        }
     }
 }
 
@@ -195,4 +198,16 @@ function displayQuiz() {
     submitBtn.textContent = 'Submit';
     submitBtn.setAttribute('onclick','submitAnswer()');
     questionContainer.appendChild(submitBtn); 
+    
+    let progress = document.createElement('div');
+    progress.classList.add("progress");
+    progress.setAttribute('id','progress');
+    quizContainer.appendChild(progress);
+    
+    let progressBar = document.createElement('div');
+    progressBar.classList.add("progress-bar");
+    progressBar.classList.add("progress-bar-striped");
+    progressBar.setAttribute('id','progressBar');
+    progressBar.style = "width:0%"
+    progress.appendChild(progressBar);  
 }
