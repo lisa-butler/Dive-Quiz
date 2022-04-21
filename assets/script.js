@@ -1,23 +1,75 @@
 const allQuestions = [
   {
-    question: "Is the sky blue?",
+    question: "Solo diving is encouraged?",
+    correctAnswer: false,
+    submittedAnswer:null
+
+  },
+  {
+    question: "Dive gear should only be serviced by a qualified professional?",
     correctAnswer: true,
     submittedAnswer:null
 
   },
   {
-    question: "Is the sky yellow?",
+    question: "Giving a thumbs up signal while underwater means I am having a great time?",
     correctAnswer: false,
     submittedAnswer:null
 
   },
   {
-    question: "Is the sky pink?",
+    question: "Dive planning is not a necessary part of diving and can be left out?",
     correctAnswer: false,
     submittedAnswer:null
-
-  }
+      
+  },
+{
+    question: "Divers with many years of diving experience never have issues underwater?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+{
+    question: "The estuation tube is involved in balance and equalisation?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+ {
+    question: "It is advised to dive with ear plugs in?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },   
+ {
+    question: "Decompression sickness is caused by oxygen bubbles in the blood?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },   
+ {
+    question: "Diving with blocked sinuses is discouraged?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },   
+ {
+    question: "A divers teeth can be affected by pressure changes?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },  
+{
+    question: "A diver is submitted to 3 bar of pressure at 20meters?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },     
+    
+    
 ];
+
+
 
 let activeQuestions = [];
 let questionNumber = 0;
@@ -27,7 +79,7 @@ let correctAnswerCount = 0;
 function startQuiz(){
     displayQuiz();
     
-    activeQuestions = allQuestions;
+    activeQuestions = getRandomQuestionSet();
     console.log("activeQuestions: ",activeQuestions)
     
     updateQuestionText();    
@@ -75,6 +127,11 @@ function getAnswerCount(question, index) {
     if (question.correctAnswer === question.submittedAnswer) {
         correctAnswerCount++;
     }
+}
+
+function getRandomQuestionSet(){
+    const shuffled = allQuestions.sort(()=>0.5 - Math.random());
+    return shuffled.slice(0,10); 
 }
  
 
