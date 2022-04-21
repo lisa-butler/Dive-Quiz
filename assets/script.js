@@ -1,5 +1,3 @@
-
-
 const allQuestions = [
   {
     question: "Is the sky blue?",
@@ -42,10 +40,22 @@ function questionAnswered(answer){
 
 function submitAnswer(){
     questionNumber++;
-    updateQuestionText();
+    
+    if (questionNumber == activeQuestions.length) {
+        showResults();
+    }  
+    else {
+        updateQuestionText();
+
+    }
+}
+
+function showResults(){
     
 }
 
+
+//private functions
 function updateQuestionText(){
     document.getElementById("question").textContent = activeQuestions[questionNumber].question;
 } 
