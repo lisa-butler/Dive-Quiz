@@ -64,7 +64,126 @@ const allQuestions = [
     correctAnswer: true,
     submittedAnswer:null
       
-  },     
+  },   
+    
+{
+    question: "Boyles law has an effect on the divers gas?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+    
+{
+    question: "A diver should always be negatively boyant at depth?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+    
+{
+    question: "A diver needs to carry more weight in fresh water than in salt water?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+    
+{
+    question: "Sounds travel much faster underwater than above water, making it hard to tell where they come from?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },   
+{
+    question: "There is a direct relationship between depth and pressure?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+{
+    question: "Leaving your dive cylinders in a hot car or out in the sun is advised as this will make the gas last longer?",
+    correctAnswer: falsee,
+    submittedAnswer:null
+      
+  }, 
+{
+    question: "Different body tissues absorb and releae nitrogen at different speeds?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+{
+    question: "Colours are more vibrant underwater?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+    
+{
+    question: "Wet suit divers are usually warmer in deeper water?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+{
+    question: "Oxygen exchange takes place in the heart?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+{
+    question: "The normal resting heart rate of an adult is 72 beats per minute?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+{
+    question: "Oxygen should not be given to a diver suspected of having decompression sickness?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+{
+    question: "Hypothermia means that the persons body temperature has gone too high?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+{
+    question: "A person looses a large percentage of their heat through their head?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  },
+{
+    question: "An octopus is considered an important part of your dive gear?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  }, 
+{
+    question: "Diving gear is designed to be salty and washing it after each dive will reduce its lifespan?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  }, 
+{
+    question: "A dive buddy not returing hand signals during a dive is not a concern?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },
+{
+    question: "An SMB is designed to highlight to boats that a diver is below the water and may be surfacing?",
+    correctAnswer: true,
+    submittedAnswer:null
+      
+  }, 
+{
+    question: "BCD stands for boyancy compression device?",
+    correctAnswer: false,
+    submittedAnswer:null
+      
+  },       
     
     
 ];
