@@ -1,9 +1,19 @@
+#background-image {
+    margin-top: 0em;
+    height: 50em;
+    width: 100%;
+    background: url("images/underwater.jpg") no-repeat center center;
+    position: fixed;
+}
+
 #heading {
     color: teal;
     font-size: 500%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+
 
 #dive-in-btn {
     box-shadow: 0px 0px 1px 1px rgb(0,0,0);
@@ -23,11 +33,12 @@
 }
 
 #quiz-container {
-    margin-top: 5em;
+    margin-top: 6em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 60%;
     height: 30em;
+    background-color: white;
     
 }
 
