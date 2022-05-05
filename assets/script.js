@@ -1,206 +1,244 @@
-const allQuestions = [
-  {
+const allQuestionsGeneral = [
+     {
     question: "Solo diving is encouraged?",
     correctAnswer: false,
-    submittedAnswer:null
-
+    submittedAnswer:null,
+    category:"General"
   },
   {
     question: "Dive gear should only be serviced by a qualified professional?",
     correctAnswer: true,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
 
   },
   {
     question: "Giving a thumbs up signal while underwater means I am having a great time?",
     correctAnswer: false,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
 
   },
   {
     question: "Dive planning is not a necessary part of diving and can be left out?",
     correctAnswer: false,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
   },
 {
     question: "Divers with many years of diving experience never have issues underwater?",
     correctAnswer: false,
-    submittedAnswer:null
-      
-  },
-{
-    question: "The estuation tube is involved in balance and equalisation?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
- {
-    question: "It is advised to dive with ear plugs in?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },   
- {
-    question: "Decompression sickness is caused by oxygen bubbles in the blood?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },   
- {
-    question: "Diving with blocked sinuses is discouraged?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },   
- {
-    question: "A divers teeth can be affected by pressure changes?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },  
-{
-    question: "A diver is submitted to 3 bar of pressure at 20meters?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },   
-    
-{
-    question: "Boyles law has an effect on the divers gas?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "A diver should always be negatively boyant at depth?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "A diver needs to carry more weight in fresh water than in salt water?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "Sounds travel much faster underwater than above water, making it hard to tell where they come from?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  }, 
-    
-{
-    question: "There is a direct relationship between depth and pressure?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "Leaving your dive cylinders in a hot car or out in the sun is advised as this will make the gas last longer?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  }, 
-    
-{
-    question: "Different body tissues absorb and releae nitrogen at different speeds?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "Colours are more vibrant underwater?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
-    
-    
-{
-    question: "Wet suit divers are usually warmer in deeper water?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "Oxygen exchange takes place in the heart?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "The normal resting heart rate of an adult is 72 beats per minute?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "Oxygen should not be given to a diver suspected of having decompression sickness?",
-    correctAnswer: false,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "Hypothermia means that the persons body temperature has gone too high?",
-    correctAnswer: true,
-    submittedAnswer:null
-      
-  },
-    
-{
-    question: "A person looses a large percentage of their heat through their head?",
-    correctAnswer: true,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
   },
     
 {
     question: "An octopus is considered an important part of your dive gear?",
     correctAnswer: true,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
   }, 
     
 {
     question: "Diving gear is designed to be salty and washing it after each dive will reduce its lifespan?",
     correctAnswer: false,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
   }, 
     
 {
     question: "A dive buddy not returing hand signals during a dive is not a concern?",
     correctAnswer: false,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
   },
     
 {
     question: "An SMB is designed to highlight to boats that a diver is below the water and may be surfacing?",
     correctAnswer: true,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
   }, 
     
 {
     question: "BCD stands for boyancy compression device?",
     correctAnswer: false,
-    submittedAnswer:null
+    submittedAnswer:null,
+    category:"General"
       
-  },       
+  } 
+];
+
+const allQuestionsPhysics = [
+    {
+    question: "A diver is submitted to 3 bar of pressure at 20meters?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  },   
     
+{
+    question: "Boyles law has an effect on the divers gas?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  },
     
+{
+    question: "A diver should always be negatively boyant at depth?",
+    correctAnswer: false,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  },
+    
+{
+    question: "A diver needs to carry more weight in fresh water than in salt water?",
+    correctAnswer: false,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  },
+    
+{
+    question: "Sounds travel much faster underwater than above water, making it hard to tell where they come from?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  }, 
+    
+{
+    question: "There is a direct relationship between depth and pressure?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  },
+    
+{
+    question: "Leaving your dive cylinders in a hot car or out in the sun is advised as this will make the gas last longer?",
+    correctAnswer: false,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  }, 
+    
+{
+    question: "Colours are more vibrant underwater?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  },  
+    
+
+    
+{
+    question: "Wet suit divers are usually warmer in deeper water?",
+    correctAnswer: false,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  }, 
+
+{
+    question: "A divers teeth can be affected by pressure changes?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physics"
+      
+  }  
+];
+
+
+
+const allQuestionsPhysiology = [
+ 
+{
+    question: "The estuation tube is involved in balance and equalisation?",
+    correctAnswer: true,
+    submittedAnswer:null,
+    category:"Physiology"
+      
+  },
+ {
+    question: "It is advised to dive with ear plugs in?",
+    correctAnswer: false,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },   
+ {
+    question: "Decompression sickness is caused by oxygen bubbles in the blood?",
+    correctAnswer: false,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },   
+ {
+    question: "Diving with blocked sinuses is discouraged?",
+    correctAnswer: true,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },   
+ 
+    
+{
+    question: "Oxygen exchange takes place in the heart?",
+    correctAnswer: false,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },
+    
+{
+    question: "The normal resting heart rate of an adult is 72 beats per minute?",
+    correctAnswer: true,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },
+    
+{
+    question: "Oxygen should not be given to a diver suspected of having decompression sickness?",
+    correctAnswer: false,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },
+    
+{
+    question: "Hypothermia means that the persons body temperature has gone too high?",
+    correctAnswer: true,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },
+    
+{
+    question: "A person looses a large percentage of their heat through their head?",
+    correctAnswer: true,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  },
+{
+    question: "Different body tissues absorb and releae nitrogen at different speeds?",
+    correctAnswer: true,
+    submittedAnswer:null,
+     category:"Physiology"
+      
+  }  
 ];
 
 
@@ -226,7 +264,7 @@ function questionAnswered(answer){
 }
 
 function submitAnswer(){
-    if (null != activeQuestions[questionNumber].submittedAnswer){//TODO increment progressbar by 10
+    if (null != activeQuestions[questionNumber].submittedAnswer){
         questionNumber++;
         
         updateProgressBar();
@@ -269,8 +307,15 @@ function getAnswerCount(question, index) {
 }
 
 function getRandomQuestionSet(){
-    const shuffled = allQuestions.sort(()=>0.5 - Math.random());
-    return shuffled.slice(0,10); 
+    const shuffledPhysics = allQuestionsPhysics.sort(()=>0.5 - Math.random());
+    const shuffledGeneral = allQuestionsGeneral.sort(()=>0.5 - Math.random());
+    const shuffledPhysiology = allQuestionsPhysiology.sort(()=>0.5 - Math.random());
+    
+    let questionSet = shuffledPhysics.slice(0,4);
+    questionSet.push(...shuffledGeneral.slice(0,4));
+    questionSet.push(...shuffledPhysiology.slice(0,4));
+
+    return  questionSet.sort(()=>0.5 - Math.random());
 }
  
 
