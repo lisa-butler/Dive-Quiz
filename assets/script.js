@@ -281,9 +281,13 @@ function submitAnswer(){
 }
 
 function showResults(){
-    document.getElementById("question").textContent = "Results";
+    let question = document.getElementById("question");
+    question.textContent = "Results";
+    question.setAttribute("style", "height:1em;margin-top:0.1em;margin-bottom:0;");
+
     let answer = document.getElementById("answer");
     answer.innerHTML = "";
+    
     document.getElementById("submit-btn").textContent = "Try Again";
     document.getElementById("submit-btn").setAttribute('onclick','location.reload()');
     
@@ -295,6 +299,104 @@ function showResults(){
     score.setAttribute('id','score');
     score.textContent = correctAnswerCount + "/" + activeQuestions.length;
     answer.appendChild(score);
+    
+    
+    //general bar
+    let correctGeneralCount = activeQuestions.filter(function (question) {
+      return (question.category === "General" && question.correctAnswer == question.submittedAnswer);
+    }).length;
+    
+    let resultsGeneralLabel = document.createElement('p');
+    resultsGeneralLabel.setAttribute('id','resultsGeneralLabel');
+    resultsGeneralLabel.textContent = "General Questions:";
+    answer.appendChild(resultsGeneralLabel);
+    
+    let resultsGeneralBar = document.createElement('div');
+    resultsGeneralBar.classList.add("progress");
+    resultsGeneralBar.setAttribute('id','resultsGeneralBar');
+    answer.appendChild(resultsGeneralBar);
+    
+    let resultsGeneralCorrect = document.createElement('div');
+    resultsGeneralCorrect.classList.add("progress-bar");
+    resultsGeneralCorrect.classList.add("progress-bar-success");
+    resultsGeneralCorrect.setAttribute('id','resultsGeneralCorrect');
+    resultsGeneralCorrect.textContent = "Correct";
+    resultsGeneralCorrect.style = "width:" + correctGeneralCount * 25 + "%"
+    resultsGeneralBar.appendChild(resultsGeneralCorrect);
+    
+    let resultsGeneralIncorrect = document.createElement('div');
+    resultsGeneralIncorrect.classList.add("progress-bar");
+    resultsGeneralIncorrect.classList.add("progress-bar-danger");
+    resultsGeneralIncorrect.setAttribute('id','resultsGeneralIncorrect');
+    resultsGeneralIncorrect.style = "width:" + (4 - correctGeneralCount) * 25 + "%"
+    resultsGeneralIncorrect.textContent = "Incorrect";
+    resultsGeneralBar.appendChild(resultsGeneralIncorrect);
+        
+    
+    //Physics bar
+    let correctPhysicsCount = activeQuestions.filter(function (question) {
+      return (question.category === "Physics" && question.correctAnswer == question.submittedAnswer);
+    }).length;
+    
+    let resultsPhysicsLabel = document.createElement('p');
+    resultsPhysicsLabel.setAttribute('id','resultsPhysicsLabel');
+    resultsPhysicsLabel.textContent = "Physics Questions:";
+    answer.appendChild(resultsPhysicsLabel);
+    
+    let resultsPhysicsBar = document.createElement('div');
+    resultsPhysicsBar.classList.add("progress");
+    resultsPhysicsBar.setAttribute('id','resultsPhysicsBar');
+    answer.appendChild(resultsPhysicsBar);
+    
+    let resultsPhysicsCorrect = document.createElement('div');
+    resultsPhysicsCorrect.classList.add("progress-bar");
+    resultsPhysicsCorrect.classList.add("progress-bar-success");
+    resultsPhysicsCorrect.setAttribute('id','resultsPhysicsCorrect');
+    resultsPhysicsCorrect.textContent = "Correct";
+    resultsPhysicsCorrect.style = "width:" + correctPhysicsCount * 25 + "%"
+    resultsPhysicsBar.appendChild(resultsPhysicsCorrect);
+    
+    let resultsPhysicsIncorrect = document.createElement('div');
+    resultsPhysicsIncorrect.classList.add("progress-bar");
+    resultsPhysicsIncorrect.classList.add("progress-bar-danger");
+    resultsPhysicsIncorrect.setAttribute('id','resultsPhysicsIncorrect');
+    resultsPhysicsIncorrect.style = "width:" + (4 - correctPhysicsCount) * 25 + "%"
+    resultsPhysicsIncorrect.textContent = "Incorrect";
+    resultsPhysicsBar.appendChild(resultsPhysicsIncorrect);
+    
+     
+    //Physiology bar
+    let correctPhysiologyCount = activeQuestions.filter(function (question) {
+      return (question.category === "Physiology" && question.correctAnswer == question.submittedAnswer);
+    }).length;
+    
+    let resultsPhysiologyLabel = document.createElement('p');
+    resultsPhysiologyLabel.setAttribute('id','resultsPhysiologyLabel');
+    resultsPhysiologyLabel.textContent = "Physiology Questions:";
+    answer.appendChild(resultsPhysiologyLabel);
+    
+    let resultsPhysiologyBar = document.createElement('div');
+    resultsPhysiologyBar.classList.add("progress");
+    resultsPhysiologyBar.setAttribute('id','resultsPhysiologyBar');
+    answer.appendChild(resultsPhysiologyBar);
+    
+    let resultsPhysiologyCorrect = document.createElement('div');
+    resultsPhysiologyCorrect.classList.add("progress-bar");
+    resultsPhysiologyCorrect.classList.add("progress-bar-success");
+    resultsPhysiologyCorrect.setAttribute('id','resultsPhysiologyCorrect');
+    resultsPhysiologyCorrect.textContent = "Correct";
+    resultsPhysiologyCorrect.style = "width:" + correctPhysiologyCount * 25 + "%"
+    resultsPhysiologyBar.appendChild(resultsPhysiologyCorrect);
+    
+    let resultsPhysiologyIncorrect = document.createElement('div');
+    resultsPhysiologyIncorrect.classList.add("progress-bar");
+    resultsPhysiologyIncorrect.classList.add("progress-bar-danger");
+    resultsPhysiologyIncorrect.setAttribute('id','resultsPhysiologyIncorrect');
+    resultsPhysiologyIncorrect.style = "width:" + (4 - correctPhysiologyCount) * 25 + "%"
+    resultsPhysiologyIncorrect.textContent = "Incorrect";
+    resultsPhysiologyBar.appendChild(resultsPhysiologyIncorrect);
+    
+    
 }
 
 
