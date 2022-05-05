@@ -228,6 +228,8 @@ function questionAnswered(answer){
 function submitAnswer(){
     if (null != activeQuestions[questionNumber].submittedAnswer){//TODO increment progressbar by 10
         questionNumber++;
+        
+        updateProgressBar();
 
 
         if (questionNumber == activeQuestions.length) {
@@ -276,6 +278,9 @@ function updateQuestionText(){
     document.getElementById("question").textContent = activeQuestions[questionNumber].question;    
 } 
 
+function updateProgressBar (){
+    document.getElementById("progressBar").setAttribute("style", "width:" + (questionNumber /activeQuestions.length)*100+"%");
+}
       
 function displayQuiz() {
     let quizContainer = document.getElementById("quiz-container");
