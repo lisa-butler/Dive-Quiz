@@ -301,6 +301,7 @@ function showResults(){
     answer.appendChild(score);
     
     
+    
     //general bar
     let correctGeneralCount = activeQuestions.filter(function (question) {
       return (question.category === "General" && question.correctAnswer == question.submittedAnswer);
@@ -326,7 +327,7 @@ function showResults(){
     
     let resultsGeneralIncorrect = document.createElement('div');
     resultsGeneralIncorrect.classList.add("progress-bar");
-    resultsGeneralIncorrect.classList.add("progress-bar-danger");
+    resultsGeneralIncorrect.classList.add("bg-danger");
     resultsGeneralIncorrect.setAttribute('id','resultsGeneralIncorrect');
     resultsGeneralIncorrect.style = "width:" + (4 - correctGeneralCount) * 25 + "%"
     resultsGeneralIncorrect.textContent = "Incorrect";
@@ -358,7 +359,7 @@ function showResults(){
     
     let resultsPhysicsIncorrect = document.createElement('div');
     resultsPhysicsIncorrect.classList.add("progress-bar");
-    resultsPhysicsIncorrect.classList.add("progress-bar-danger");
+    resultsPhysicsIncorrect.classList.add("bg-danger");
     resultsPhysicsIncorrect.setAttribute('id','resultsPhysicsIncorrect');
     resultsPhysicsIncorrect.style = "width:" + (4 - correctPhysicsCount) * 25 + "%"
     resultsPhysicsIncorrect.textContent = "Incorrect";
@@ -390,13 +391,17 @@ function showResults(){
     
     let resultsPhysiologyIncorrect = document.createElement('div');
     resultsPhysiologyIncorrect.classList.add("progress-bar");
-    resultsPhysiologyIncorrect.classList.add("progress-bar-danger");
+    resultsPhysiologyIncorrect.classList.add("bg-danger");
     resultsPhysiologyIncorrect.setAttribute('id','resultsPhysiologyIncorrect');
     resultsPhysiologyIncorrect.style = "width:" + (4 - correctPhysiologyCount) * 25 + "%"
     resultsPhysiologyIncorrect.textContent = "Incorrect";
     resultsPhysiologyBar.appendChild(resultsPhysiologyIncorrect);
     
     
+    
+    let progressBar = document.getElementById("progress");
+    progressBar.parentNode.removeChild(progressBar);
+
 }
 
 
