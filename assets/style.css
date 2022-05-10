@@ -33,22 +33,22 @@
     
 }
 
-#quiz-container {
-    margin-top: 6em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+.card {
     width: 60%;
-    height: 30em;
-    background-color: white;
-    
-}
-
-#quiz-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    height: 60%;
+    margin-top: 4em;
 }
 
 #answer{
     width: auto;
 }
 
+#true-btn, #false-btn{
+    margin-top: 2em;
+}
+
+#submit-btn{
+    margin-top: 0;
+}
 

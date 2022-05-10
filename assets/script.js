@@ -290,6 +290,7 @@ function showResults(){
     
     document.getElementById("submit-btn").textContent = "Try Again";
     document.getElementById("submit-btn").setAttribute('onclick','location.reload()');
+    document.getElementById("submit-btn").setAttribute('style','margin-top:2em');
     
     activeQuestions.forEach(getAnswerCount);
     console.log(correctAnswerCount + "/" + activeQuestions.length);
