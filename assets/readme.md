@@ -4,6 +4,7 @@
 
 The quiz is a simple 12 question quiz with three categories of question included. It is designed to test very basic scuba knowledge. The languages and logic used to create the quiz are intended to display JavaScript skills.
  
+
 ### Lisa Butler
 
 
@@ -107,9 +108,9 @@ The colors that were selected for use were;
 * Blue #3f88db -used for the true button and selected with the dropper tool from the background image for cohesivness.
 * Orange #d4a853 -used for the false button and selected with the dropper tool from the background image for cohesivness.
 
-The blue fo the progress bar was also selected with the dropper function and on the results page red and green were used to signify correct and incorrect.
+The blue of the progress bar was also selected with the dropper function and on the results page red and green were used to signify correct and incorrect.
 
-![Colors in use](assets/images/readme-images/picture4.jpg)/////////
+![Button Colors](images/buttoncolors.jpg)
 
 **Fonts:**
 Fonts were selected based on what was clear and easy to read.
@@ -278,3 +279,27 @@ Deployment of the quiz via github was done using the following steps;
 
 
 ------------------------------------------------------------------
+
+## Credits and Acknowledgements
+
+<a name="credits"></a>
+
+### **Credits:**
+
+* Background Image: VectorStock.com.
+* Code: Some code snippets were taken and adjusted for purpose from W3Schools (https://www.w3schools.com/), Stack Overflow (https://www.w3schools.com/) and FreeCodeCamp (https://www.freecodecamp.org/).
+* BootStrap: Bootstrap code such as that for the progress bars and buttons was taken and adjusted from getBootStrap.com (https://getbootstrap.com/).
+
+
+### **Acknowledgements:** 
+
+* My program coordinator Kasia for contiuned support and advice throughout.
+* My software developer friends (Joshua Butler-senior dev at Overstock Ireland and Glenn Gilmartin- senior dev at Overstock Ireland) for their advice and patience.
+
+------------------------------------------------------------------
+
+## Content and resources
+
+<a name="content"></a> 
+
+* All content was written by the developer as part of an academic exercise for the Code Institute.
