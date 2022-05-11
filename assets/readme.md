@@ -1,6 +1,7 @@
 # JavaScript Essentials Project
 ## Dive Quiz
 ### This quiz was built as a JavaScript essentials project as part of the diploma in software development at the code institute. This quiz is designed for academic purposes only and information is referenced from diving Ireland.
+
 The quiz is a simple 12 question quiz with three categories of question included. It is designed to test very basic scuba knowledge. The languages and logic used to create the quiz are intended to display JavaScript skills.
  
 ### Lisa Butler
@@ -25,6 +26,10 @@ The quiz is a simple 12 question quiz with three categories of question included
  6. [Deployment](#deploy)
  7. [Credits](#credits)
  8. [Content](#content)  
+
+
+
+![Quiz Start Page](images/startpage.jpg)
 
 
 ## User Experience 
@@ -75,36 +80,34 @@ At the bottom of the results page is a try again button to take the user back to
 For this project i started with wire frames drawn on paper, these were then mocked up on a wrod docuemnt to form a basic idea of the proposed layout of the quiz pages.
 The basic plan for the quiz was to keep it as simple and uncluttered as possible while creating an asthetically pleasing and enjoyable user experience. 
 
-![Wire frame of home page](assets/images/readme-images/wireframe.jpg)///////////////
+![Wire frame of quiz page](images/wireframequizq.jpg)
 
 ////////
 ### **Style**
 
-Background: It was decided after some deliberation not to have a background image running behind the content as this was both distracting and made the content look more cluttered. The decision to leave the background color as white happed towards the end of the design phase when the content had been style and it was decided that this was the most minimalistic and legible approach.
+Background: It was decided to have a simple, brightly coloured background image in keeping with the scuba theme. This helped to push the card forward and make it more prominant on the screen while also contributing to the asthetics of the quiz site.
+
+Card: The card option was chosen as it presented like study cards. With the shadow styling it could be made to look like a stack of notes. It also draws the viewers eye to the card and the info presented on it.
 
 **Color:** 
-The white background was chosen as it enabled the content to be very legible and to stand out for the user, making the site more navigatable.
+The white card background was chosen as it allowed the question to stand out. By keeping the card a clean white against a colourful background it drew attention and made it easy for the user to read the question.
 
-The colors eventually selected for use were;
+The colors that were selected for use were;
 
-* White #FFF -used for the background.
-* Grey #D3D3D3 -used for hover over functions and detailing.
-* Teal #008080 -used for heading, sub-headings and buttons.
-* Black #000 -used for text as black on white is widely known as the most legible combination of colors.
+* White #FFF -used for the background of card.
+* Grey #D3D3D3 -used for start quiz button.
+* Teal #008080 -used for submit button as teal is a color associated with the sea.
+* Blue #3f88db -used for the true button and selected with the dropper tool from the background image for cohesivness.
+* Orange #d4a853 -used for the false button and selected with the dropper tool from the background image for cohesivness.
 
-The white background helped the banner images and images in the gallery page to pop out as well as heightening the pop of color in the icon used.
+The blue fo the progress bar was also selected with the dropper function and on the results page red and green were used to signify correct and incorrect.
 
-![Colors in use](assets/images/readme-images/picture4.jpg)
+![Colors in use](assets/images/readme-images/picture4.jpg)/////////
 
 **Fonts:**
-Fonts were selected based on what was clear and easy to read as well as feeling like they were suited for a diving-based theme. 
-The fonts chosen were;
-	-Ubuntu
-	-Sans-Serif
-The focus of these fonts being to provide the information in a non-distracting manner that was viable for the visually impaired user or someone trying to use the site on a mobile device.
+Fonts were selected based on what was clear and easy to read.
 
 ------------------------------------------------------------------
-//////
 
 ## Website Features
 
@@ -112,13 +115,17 @@ The focus of these fonts being to provide the information in a non-distracting m
 
 ### **Start Page**
 
+![Start Page](images/startpage.jpg)
+
 The start page of the quiz is a simple quiz card, designed to pull the users attention straight to it with a button to initiate the quiz being obvious.
 On clicking this button, the questions are selected and randomised and populated as called.
 
 **Dive in Button:**
-The button was designed with bootstrap and a teal color was selected as this is in keeping with the diving theme.
+The button was designed with bootstrap and a grey color was selected as this is in keeping with the diving theme.
 
 ### **Quiz Pages**
+
+![Quiz Page](images/quizpage.jpg)
 
 In order for the quiz to achieve its goals, it was decided to have three categories of questions (general, physics and physiology) within the question bank and to randomly pull 4 questions from each to become the active questions in the quiz. These questions are randomly selected on the click of the quiz initiating button. 
 
@@ -133,6 +140,8 @@ The progress bar is a bootstrap feature that serves to indicate the users positi
 
 
 ### **Results Page**
+
+![Results Page](images/resultspage.jpg)
 
 The results page displays the overall score then shows three seperate bars indicating the three cateories of questions results.
 
@@ -211,6 +220,30 @@ Testing was mostly done by me and some friends, three of which are software deve
 
 **Testing using Google Lighthouse:**
 
+Testing with Lighthouse was straightforward and did not raise any significant issues.
+
+![Lighthouse test](images/lighthousetest.jpg)
+
+**Testing using W3C Validator:**
+
+Testing with W3C Validator came back with no errors or warnings. 
+
+![W3C Validator test](images/w3ctest.jpg)
+
+**Testing using Jigsaw:**
+
+Testing with CSS Jigsaw validator showed no errors.
+
+![Jigsaw test](images/jigsawtest.jpg)
+
+**Testing using W3C jsHint:**
+
+Testing with jsHint showed 47 warnings. These were all pertaining to the version of javascript that was being used, suggesting that version 6 needs to be run for these functions to work effectively. As i used version 6 to write the code and some research showed that this will vary device to device, i did not pursue this issue.
+
+![jsHint test](images/jshinttest.jpg)
+
+
+
 ## Bugs
 
 <a name="bugs"></a>
@@ -219,6 +252,8 @@ Testing was mostly done by me and some friends, three of which are software deve
 
 * Initially there was an issue with the progress bar, it did not progress as each question was clicked, then it was finishing its count on the results page and was still present on this page. All were resolved.
 * Positioning on the screen especially on smaller screens was somewhat difficult. The submit button would disappear off the screen making it impossible to progress the quiz. The buttons would also stack over the text. This was remedied.
+
+![Progress Bar Bug](images/bugjsproj.jpg)
 
 ------------------------------------------------------------------
 
