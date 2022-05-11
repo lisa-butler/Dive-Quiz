@@ -109,7 +109,7 @@ const allQuestionsPhysics = [
   },
     
 {
-    question: "Sounds travel much faster underwater than above water, making it hard to tell where they come from?",
+    question: "Sounds travel much faster underwater, making it hard to tell where they come from?",
     correctAnswer: true,
     submittedAnswer:null,
     category:"Physics"
@@ -125,7 +125,7 @@ const allQuestionsPhysics = [
   },
     
 {
-    question: "Leaving your dive cylinders in a hot car or out in the sun is advised as this will make the gas last longer?",
+    question: "Leaving your dive cylinders in a hot car is advised as this will make the gas last longer?",
     correctAnswer: false,
     submittedAnswer:null,
     category:"Physics"
