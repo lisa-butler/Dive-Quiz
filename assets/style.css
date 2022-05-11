@@ -75,6 +75,7 @@
     border-color: black;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 1.5vw;
    
 }
 
@@ -104,4 +105,8 @@
 #progressBar {
     background-color: #5fc0f3;
     
+}
+
+#resultsGeneralCorrect, #resultsPhysicsCorrect, #resultsPhysiologyCorrect {
+    background-color: #62b18c;
 }

@@ -252,7 +252,7 @@ function startQuiz(){
     displayQuiz();
     
     activeQuestions = getRandomQuestionSet();
-    console.log("activeQuestions: ",activeQuestions)
+    console.log("activeQuestions: ",activeQuestions);
     
     updateQuestionText();    
  
@@ -260,7 +260,7 @@ function startQuiz(){
 
 function questionAnswered(answer){
     activeQuestions[questionNumber].submittedAnswer = answer;
-    console.log("activeQuestions>questionAnswered: ",activeQuestions)
+    console.log("activeQuestions>questionAnswered: ",activeQuestions);
 }
 
 function submitAnswer(){
@@ -323,14 +323,14 @@ function showResults(){
     resultsGeneralCorrect.classList.add("progress-bar-success");
     resultsGeneralCorrect.setAttribute('id','resultsGeneralCorrect');
     resultsGeneralCorrect.textContent = "Correct";
-    resultsGeneralCorrect.style = "width:" + correctGeneralCount * 25 + "%"
+    resultsGeneralCorrect.style = "width:" + correctGeneralCount * 25 + "%";
     resultsGeneralBar.appendChild(resultsGeneralCorrect);
     
     let resultsGeneralIncorrect = document.createElement('div');
     resultsGeneralIncorrect.classList.add("progress-bar");
     resultsGeneralIncorrect.classList.add("bg-danger");
     resultsGeneralIncorrect.setAttribute('id','resultsGeneralIncorrect');
-    resultsGeneralIncorrect.style = "width:" + (4 - correctGeneralCount) * 25 + "%"
+    resultsGeneralIncorrect.style = "width:" + (4 - correctGeneralCount) * 25 + "%";
     resultsGeneralIncorrect.textContent = "Incorrect";
     resultsGeneralBar.appendChild(resultsGeneralIncorrect);
         
@@ -355,14 +355,14 @@ function showResults(){
     resultsPhysicsCorrect.classList.add("progress-bar-success");
     resultsPhysicsCorrect.setAttribute('id','resultsPhysicsCorrect');
     resultsPhysicsCorrect.textContent = "Correct";
-    resultsPhysicsCorrect.style = "width:" + correctPhysicsCount * 25 + "%"
+    resultsPhysicsCorrect.style = "width:" + correctPhysicsCount * 25 + "%";
     resultsPhysicsBar.appendChild(resultsPhysicsCorrect);
     
     let resultsPhysicsIncorrect = document.createElement('div');
     resultsPhysicsIncorrect.classList.add("progress-bar");
     resultsPhysicsIncorrect.classList.add("bg-danger");
     resultsPhysicsIncorrect.setAttribute('id','resultsPhysicsIncorrect');
-    resultsPhysicsIncorrect.style = "width:" + (4 - correctPhysicsCount) * 25 + "%"
+    resultsPhysicsIncorrect.style = "width:" + (4 - correctPhysicsCount) * 25 + "%";
     resultsPhysicsIncorrect.textContent = "Incorrect";
     resultsPhysicsBar.appendChild(resultsPhysicsIncorrect);
     
@@ -387,14 +387,14 @@ function showResults(){
     resultsPhysiologyCorrect.classList.add("progress-bar-success");
     resultsPhysiologyCorrect.setAttribute('id','resultsPhysiologyCorrect');
     resultsPhysiologyCorrect.textContent = "Correct";
-    resultsPhysiologyCorrect.style = "width:" + correctPhysiologyCount * 25 + "%"
+    resultsPhysiologyCorrect.style = "width:" + correctPhysiologyCount * 25 + "%";
     resultsPhysiologyBar.appendChild(resultsPhysiologyCorrect);
     
     let resultsPhysiologyIncorrect = document.createElement('div');
     resultsPhysiologyIncorrect.classList.add("progress-bar");
     resultsPhysiologyIncorrect.classList.add("bg-danger");
     resultsPhysiologyIncorrect.setAttribute('id','resultsPhysiologyIncorrect');
-    resultsPhysiologyIncorrect.style = "width:" + (4 - correctPhysiologyCount) * 25 + "%"
+    resultsPhysiologyIncorrect.style = "width:" + (4 - correctPhysiologyCount) * 25 + "%";
     resultsPhysiologyIncorrect.textContent = "Incorrect";
     resultsPhysiologyBar.appendChild(resultsPhysiologyIncorrect);
     
@@ -500,6 +500,6 @@ function displayQuiz() {
     progressBar.classList.add("progress-bar");
     progressBar.classList.add("progress-bar-striped");
     progressBar.setAttribute('id','progressBar');
-    progressBar.style = "width:0%"
+    progressBar.style = "width:0%";
     progress.appendChild(progressBar);  
 }
