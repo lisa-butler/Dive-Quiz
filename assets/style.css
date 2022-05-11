@@ -8,11 +8,14 @@
 
 #heading {
     color: teal;
-    font-size: 500%;
+    font-size: 300%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
+#background-image {
+    background-size: cover;
+}
 
 
 #dive-in-btn {
@@ -21,23 +24,33 @@
 
 #question {
     color: dimgray;
-    font-size: 300%;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom: 1em;
-    height: 3em;
+    height: 30vh;
+    font-size: 4vw;
+   
 }
 
 #submit-btn {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    
+    width: 35vw;
+    height: 7vh;
+    padding: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: teal;
+    border-color: black;
 }
 
 .card {
-    width: 60%;
+    width: 60vw;
     margin: auto;
-    height: 60%;
     margin-top: 4em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.8);
 }
 
 #answer{
@@ -45,10 +58,31 @@
 }
 
 #true-btn, #false-btn{
-    margin-top: 2em;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width; 35vw;
+    height: 7vh;
+    border-color: black;
+    padding-top: 0;
+    padding-bottom: 0;
+   
 }
 
-#submit-btn{
-    margin-top: 0;
+#ture-btn {
+    color: rgba(31, 145, 46, 0.8);
 }
 
+#score {
+    margin-top: 1.5vh;
+    font-size: 130%;
+    color: teal;
+    font-weight: 500;
+    
+}
+
+#resultsGeneralLabel, #resultsPhysicsLabel, #resultsPhysiologyLabel {
+    margin-top: 1.5vh;
+    font-weight: 350;
+    margin-bottom: 0.8vh;
+    
+}

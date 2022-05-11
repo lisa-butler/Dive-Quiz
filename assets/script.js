@@ -77,7 +77,7 @@ const allQuestionsGeneral = [
 
 const allQuestionsPhysics = [
     {
-    question: "A diver is submitted to 3 bar of pressure at 20meters?",
+    question: "A diver is submitted to 3 bar of pressure at 20 meters below sea level?",
     correctAnswer: true,
     submittedAnswer:null,
     category:"Physics"
@@ -133,8 +133,8 @@ const allQuestionsPhysics = [
   }, 
     
 {
-    question: "Colours are more vibrant underwater?",
-    correctAnswer: true,
+    question: "Colours become more vibrant the deeper you dive?",
+    correctAnswer: false,
     submittedAnswer:null,
     category:"Physics"
       
@@ -164,7 +164,7 @@ const allQuestionsPhysics = [
 const allQuestionsPhysiology = [
  
 {
-    question: "The estuation tube is involved in balance and equalisation?",
+    question: "The eustachian tube is involved in balance and equalisation?",
     correctAnswer: true,
     submittedAnswer:null,
     category:"Physiology"
@@ -219,7 +219,7 @@ const allQuestionsPhysiology = [
     
 {
     question: "Hypothermia means that the persons body temperature has gone too high?",
-    correctAnswer: true,
+    correctAnswer: false,
     submittedAnswer:null,
      category:"Physiology"
       
