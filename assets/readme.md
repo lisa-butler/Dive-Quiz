@@ -72,6 +72,9 @@ A background image was used throughout to add color to the quiz.
 Each page of the quiz consists of the question, a true or false button and a submit button. In order to click the submit button, the user must first have selected the rue or false button. 
 A progress bar runs along the bottom and shows the user how far into the quiz they are.
 
+![Initial logic test](images/initialqtest.jpg)
+
+
 **Results Page:**
 The results page has a general score at the top of the page. Below that it ha three categories of results displayed on a correct vs incorrect bar. This shows the user their skill level in each category.
 At the bottom of the results page is a try again button to take the user back to the start page of the quiz.
@@ -82,10 +85,14 @@ The basic plan for the quiz was to keep it as simple and uncluttered as possible
 
 ![Wire frame of quiz page](images/wireframequizq.jpg)
 
-////////
+
+
 ### **Style**
 
 Background: It was decided to have a simple, brightly coloured background image in keeping with the scuba theme. This helped to push the card forward and make it more prominant on the screen while also contributing to the asthetics of the quiz site.
+
+![Background](images/underwater.jpg)
+
 
 Card: The card option was chosen as it presented like study cards. With the shadow styling it could be made to look like a stack of notes. It also draws the viewers eye to the card and the info presented on it.
 
