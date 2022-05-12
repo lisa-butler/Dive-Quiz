@@ -36,6 +36,7 @@ The quiz is a simple 12 question quiz with three categories of question included
 ## User Experience 
 
 <a name="ux"></a>
+
 ### **Pre project planning** 
 Before starting into this quiz, I explored the option of creating a game form the essentials project and ultimately decided to go with a quiz as this would enable me to use predominantly vanilla javascript and achieve the project goals without massively overstretching myself time wise. 
 I chose to do a diving-based quiz as there is a lot of theory for new divers to learn, and a quiz would be a beneficial asset for learning it. The theory is usually split into the categories of general knowledge, physics and physiology, the categories I chose for my quiz. I hoped to create the quiz in such a way that it would let users know which areas they were stronger and which they were weaker on. As I was opting for three categories fo questions, I went with a 12 question quiz containing 4 questions from each category. For this project 30 questions, ten from each category, were added, however, there is scope to add many more.
@@ -119,7 +120,7 @@ Fonts were selected based on what was clear and easy to read.
 
 ## Website Features
 
-<a name="ux"></a>
+<a name="features"></a>
 
 ### **Start Page**
 
@@ -176,6 +177,8 @@ If I was to build this quiz with more time and scope I would implement some diff
 ## Technologies Used 
 
 <a name="tech"></a>
+
+
 ### **Languages** 
 
 The languages used in this project were;
@@ -259,7 +262,7 @@ Testing with jsHint showed 47 warnings. These were all pertaining to the version
 ### **Bugs Found:**
 
 * Initially there was an issue with the progress bar, it did not progress as each question was clicked, then it was finishing its count on the results page and was still present on this page. All were resolved.
-* Positioning on the screen especially on smaller screens was somewhat difficult. The submit button would disappear off the screen making it impossible to progress the quiz. The buttons would also stack over the text. This was remedied.
+* Positioning on the screen especially on smaller screens was somewhat difficult. The submit button would disappear off the screen making it impossible to progress the quiz. The buttons would also stack over the text. This was remedied with media queries and altering sizing.
 
 ![Progress Bar Bug](images/bugjsproj.jpg)
 
@@ -300,6 +303,6 @@ Deployment of the quiz via github was done using the following steps;
 
 ## Content and resources
 
-<a name="content"></a> 
+<a name="content"></a>
 
 * All content was written by the developer as part of an academic exercise for the Code Institute.
