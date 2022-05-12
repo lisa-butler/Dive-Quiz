@@ -1,6 +1,6 @@
 #background-image {
     margin-top: 0em;
-    height: 50em;
+    height: 100%;
     width: 100%;
     background: url("images/underwater.jpg") no-repeat center center;
     position: fixed;
@@ -23,7 +23,6 @@
     margin-bottom: 4vh;
     width: 35vw;
     height: 12vh;
-    font-size: 2vw;
     padding: 0;
 }
 
@@ -31,9 +30,9 @@
     color: dimgray;
     margin-top: 5vw;
     margin-bottom: 2vw;
-    height: 30vh;
-    font-size: 6vmin;
-   
+    height: 35vh;
+    font-size: 7vmin;
+    word-wrap: normal;
 }
 
 #heading {
@@ -75,8 +74,8 @@
     border-color: black;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 1.5vw;
-   
+    word-wrap: normal;
+    min-width: fit-content;
 }
 
 #false-btn {
@@ -109,4 +108,22 @@
 
 #resultsGeneralCorrect, #resultsPhysicsCorrect, #resultsPhysiologyCorrect {
     background-color: #62b18c;
+}
+
+
+/*Media queries for 500px and below*/
+@media screen and (max-width: 850px) {
+  
+    .card {
+        width: 90vw;
+        margin-top: 8vh;
+
+    }  
+    
+    .card-body {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;s
+    }
+
 }

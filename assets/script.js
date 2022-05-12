@@ -13,14 +13,14 @@ const allQuestionsGeneral = [
 
   },
   {
-    question: "Giving a thumbs up signal while underwater means I am having a great time?",
+    question: "Thumbs up while underwater means I am having a great time?",
     correctAnswer: false,
     submittedAnswer:null,
     category:"General"
 
   },
   {
-    question: "Dive planning is not a necessary part of diving and can be left out?",
+    question: "Dive planning is not a necessary part of diving?",
     correctAnswer: false,
     submittedAnswer:null,
     category:"General"
@@ -59,7 +59,7 @@ const allQuestionsGeneral = [
   },
     
 {
-    question: "An SMB is designed to highlight to boats that a diver is below the water and may be surfacing?",
+    question: "An SMB is designed to highlight to boats that a diver is below the water/surfacing?",
     correctAnswer: true,
     submittedAnswer:null,
     category:"General"
@@ -109,7 +109,7 @@ const allQuestionsPhysics = [
   },
     
 {
-    question: "Sounds travel much faster underwater, making it hard to tell where they come from?",
+    question: "Sounds travel much faster underwater?",
     correctAnswer: true,
     submittedAnswer:null,
     category:"Physics"
